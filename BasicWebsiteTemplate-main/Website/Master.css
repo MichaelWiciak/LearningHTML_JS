@@ -1,0 +1,141 @@
+body {
+  font-family: helvetica neue;
+  padding:0;
+  margin:0;
+}
+
+p {
+	background: white;
+}
+
+.dropdown {
+	position: relative;
+
+}
+
+ul {
+
+}
+
+nav {
+  background: #333;
+  padding: .15em 0;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+li:hover {
+  background: gray;
+  cursor: pointer;
+  align-self: center;
+  flex-direction: row;
+  transition-duration: 2.5s;
+}
+
+nav ul li {
+  margin-left: 5em;
+  justify-content: center;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.nav-sticky {
+  position: -webkit-sticky;
+  position: sticky; top: 0px;
+}
+
+header {
+  background: hotpink;
+  color: #fff;
+  display: flex;
+  min-height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+artHeader {
+  background: gray;
+  color: #fff;
+  display: flex;
+  min-height: 150px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header h1 {
+  font-size: 3.5em;
+}
+
+article {
+  line-height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+article h1 {
+  padding-top: 75px;
+}
+
+ul li ul {
+  background: #333;
+  visibility: hidden;
+  opacity: 1;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0rem;
+  left: 0;
+  display: none;
+  flex: none;
+  align-items: center;
+
+
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  transition-duration: 2.5s;
+}
+
+
+
+form {
+  padding: 50px 0;
+  width: 50%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
